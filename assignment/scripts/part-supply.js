@@ -68,8 +68,15 @@ for (items of supplyChanges) {
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
 
-let total = 3 + 5 + (-6) + 0 + 7 + 11;
-console.log(total);
+
+let totalNumberParts = 0 ;
+
+for (let i = 0; i < supplyChanges.length; i++) {
+  totalNumberParts += supplyChanges[i];
+}
+
+console.log("Total number of parts available at the store is: " + totalNumberParts);
+
 
 
 
